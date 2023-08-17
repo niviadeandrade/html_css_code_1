@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--stats of body-->
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"class="established">This survey will help us to know your preferences. Thank you for your colaboration!</p>
+<form id="survey-form" action='https://register-demo.freecodecamp.org'>
+
+<!--firt field-->
+<fieldset>
+<label for="name" id="name-label"> 
+Enter your first and last name:
+<input class="height"
+required id="name" type="text" placeholder="insert your name..." />
+</label>
+<label for="email" id="email-label"> 
+Enter your email:
+<input class="height" required id="email" type="email" placeholder="insert your email..."/>
+</label>
+<label for="number" id="number-label" > 
+Enter your age:
+<input class="input-age" id="number" type="number" min="16" max="120" placeholder="choose your age..."/>
+</fieldset>
+
+<!--second field-->
+<fieldset>
+<p class="bold" >PROFESSIONAL INQUIRY</p>
+<label>
+Do you wnat to be a developer?
+</label>
+<label for="yes">
+<input required id="yes" type="radio" value="yes" name="yes-no-question"/>Yes
+</label>
+<label for="no">
+<input id="no" type="radio" value="no" name="yes-no-question"/>No
+</label>
+<p><label>Wich develops do you want to be?</label></p>
+<select id="dropdown">
+<option value="">Select one option</option>
+<option value="1">Frontend</option>
+<option value="2">Middleware</option>
+<option value="3">Backend</option>
+<option value="4">I don't want to be a developer</option>
+</select>
+<p><label>What languages do you prefer to learn?</label></p>
+<label for="c++"> 
+  <input id="c++" type="checkbox" name="C++" value="c++"/>C++
+</label>
+<label for="c"> 
+  <input id="c" type="checkbox" name="C" value="c"/>C
+</label>
+<label for="c#"> 
+  <input id="c#" type="checkbox" name="C#" value="c#"/>C#
+</label>
+<label for="python"> 
+  <input id="python" type="checkbox" name="python" value="python"/>Python
+</label>
+<label for="javascript"> 
+  <input id="javascript" type="checkbox" name="javascript" value="javascript"/>Javascript
+</label>
+<label for="html-css"> 
+  <input id="html-css" type="checkbox" name="html-css" value="html-css"/>HTML e CSS
+</label>
+<label for="java"> 
+  <input id="java" type="checkbox" name="java" value="java"/>Java
+</label>
+<label for="php"> 
+  <input id="php" type="checkbox" name="php" value="php"/>PHP
+</label>
+<label for="sql"> 
+  <input id="sql" type="checkbox" name="sql" value="sql"/>SQL
+</label>
+<label for="ruby"> 
+  <input id="ruby" type="checkbox" name="ruby" value="ruby"/>Ruby
+</label>
+<label for="r"> 
+  <input id="r" type="checkbox" name="r" value="r"/>R
+</label>
+<label for="outra"> 
+  <input id="outra" type="checkbox" name="outra" value="outra"/>Other? 
+  <input class="height" id="text" name="text" placeholder="Write wich other language here...."/>
+</label>
+ <p></p><label for="text">Any other thing that you want to tell us?<textarea type="textarea" id="text" name="text" placeholder="write here your text..." rows="6" cols="40"></textarea> </label> 
+</fieldset>
+
+<!--last field-->
+<fieldset>
+    <input id="submit" type="submit" value="submit"/>
+</fieldset>
+
+</form>   
+</body>
+<!--end of body and form-->
